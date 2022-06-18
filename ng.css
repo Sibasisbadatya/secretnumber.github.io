@@ -1,0 +1,169 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color:aqua;
+}
+.state{
+    font-size: 10rem;
+}
+#guess{
+    font-size: 5rem;
+}
+.div1{
+    height: 20vh;
+    width: 20vw;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#guess{
+    height: 100%;
+    width: 100%;   
+}
+.div2{
+    height: 5vh;
+    width: 20vw;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#check{
+    height: 100%;
+    width: 100%;
+ 
+}
+.div3{
+    height: 5vh;
+    width: 20vw;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#refresh{
+    height: 100%;
+    width: 100%;
+  
+}
+.generate{
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 10px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5vw 5vw 25vw;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.image{
+    grid-row: 1/3;
+    grid-column: 1/4;
+    margin: 10px;
+    
+}
+#img{
+    height: 100%;
+    width: 100%;
+}
+@media only screen and (max-width:1080px){
+    .state{
+        font-size: 8rem;
+    }  
+    #guess{
+        font-size: 3.5rem;
+    }   
+}
+@media only screen and (max-width:765px){
+    .state{
+        font-size: 6rem;
+    }
+    #guess{
+        font-size: 2.5rem;
+    }   
+}
+@media only screen and (max-width:680px){
+    .state{
+        font-size: 4rem;
+    }
+    #guess{
+        font-size: 2rem;
+    }  
+    .generate{
+        display: flex;
+     flex-direction: column;
+        margin: 10px;
+        padding: 5px;
+     
+    }
+    .div3{
+        height: 5vh;
+        width: 25vw;
+ 
+    } 
+    .div2{
+        height: 5vh;
+        width: 25vw;
+    
+    }
+}
+@media only screen and (max-width:680px){
+    .state{
+        font-size: 3rem;
+    }
+    #guess{
+        font-size: 1.5rem;
+    }  
+    .generate{
+        display: flex;
+     flex-direction: column;
+        margin: 10px;
+        padding: 5px;
+     
+    }
+    .div3{
+        height: 5vh;
+        width: 25vw;
+ 
+    } 
+    .div2{
+        height: 5vh;
+        width: 25vw;
+    
+    }
+    .div1{
+        height: 10vh;
+        width: 30vw;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+@media only screen and (max-width:400px){
+    .state{
+        font-size: 3rem;
+    }
+    #guess{
+        font-size: 1.5rem;
+    }  
+    .generate{
+        display: flex;
+     flex-direction: column;
+        margin: 10px;
+        padding: 5px;
+     
+    }
+    .div3{
+        height: 5vh;
+        width: 25vw;
+ 
+    } 
+    .div2{
+        height: 5vh;
+        width: 25vw;
+    
+    }
+    .div1{
+        height: 10vh;
+        width: 40vw;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}

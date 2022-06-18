@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="ng.css">
+</head>
+
+<body>
+    <div class="state" align="center">Guess the Secret Number Between 1-10.</div>
+   
+<br><br>
+
+    <div class="generate">
+        <div class="image"><img src="guess.gif" height="200vh" width="200vw" margin="10px"></div>
+
+        <div class="div1">
+            <label for="guess" id="guess">Enter Your Number</label>
+            <input type="number" id="input" min="1" max="10">
+        </div>
+
+        <div class="div2">
+            <input type="submit" value="check" id="check" onclick="result()">
+        </div>
+
+        <div class="div3">
+            <input type="button" value="Play Again" id="refresh" onclick="reload()">
+        </div>
+
+    </div>
+
+    <script src="ng.js"></script>
+</body>
+
+</html>
